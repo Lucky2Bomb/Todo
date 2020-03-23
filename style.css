@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(230, 230, 230);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding-top: 10%;
+}
+
+#main {
+  width: 600px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+#main_input {
+  width: 100%;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+#listGroup {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#listGroup li {
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.taskItem {
+
+}
+
+#main_form {
+  background-color: #fff;
+  padding: 5px;
+}
+
+#main_form h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  
+  font-weight: normal;
+  color: rgb(98, 63, 63);
+  font-size: 48pt;
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-shadow: 0 0 10px rgba(0,0,0,0.3); 
+}
+
+#deleteCompleted {
+  text-decoration: none;
+  color: #A01010;
+  float: right;
+  border: 1px solid rgb(210, 210, 210);
+  padding: 0 2px;
+}
+
+.taskItem:checked + span {
+  text-decoration: line-through;
+}
+
+.aClose {
+  float: right;
+  text-decoration: none;
+  font-weight: 900;
+  color: black;
+}

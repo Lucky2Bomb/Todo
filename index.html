@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="main">
+			
+			<form id="main_form" onsubmit="addNewTask()">
+				<h1>todo</h1>
+				<label>Complete: <span id="score">0</span></label>
+				<input type="radio" value="all" name="r1" id="inputAll" onclick="inputAll_click()" checked><span>all </span>
+				<input type="radio" value="active" name="r1" id="inputActive" onclick="inputActive_click()"><span>active </span>
+				<input type="radio" value="completed" name="r1" id="inputCompleted" onclick="inputCompleted_click()"><span>completed</span>
+				<a href="#" id="deleteCompleted" onclick="a_click()">delete completed</a>
+
+				<input type="text" id="main_input" placeholder="Write your task">
+
+				<ul id="listGroup">
+				</ul>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
